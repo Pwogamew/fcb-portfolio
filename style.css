@@ -14,7 +14,7 @@ h1, p{
 /*Create border for image	*/
 	border-width: 12px;
 	border-style: solid;
-	border-color: blue;
+	border-color: black;
 }
 
 body {
