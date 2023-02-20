@@ -4,11 +4,12 @@
 
 h1, p{
 	font-family: "Montserrat", sans-serif;
+	color: white;
 }
 
 #profile{
-	height: 250px;
-	width: 250px;
+	height: 300px;
+	width: 300px;
 	border-radius: 50%;
 /*Create border for image	*/
 	border-width: 10px;
