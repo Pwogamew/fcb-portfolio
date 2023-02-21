@@ -17,6 +17,9 @@ h1, p{
 	border-color: black;
 }
 
+#desiredfname{
+	width: 369px;
+}
 
 #landing{
 
@@ -61,15 +64,8 @@ h1, p{
 	transition-duration: 1s;
 	transition-timing-function: ease;
 	transition-delay: 0s;
-}
-
-#name.up{
-	transform: translate(20px, -135px);
-	border-radius:5px;
-}
-
-#name.blur{
-	
+	color: white;
+	outline: none;
 }
 
 .input-group input {
@@ -83,28 +79,45 @@ h1, p{
 	padding: 10px;
 	pointer-events: none;
 	font-size: 1em;
-	color: white;
 }
 
 input[type="text"]::-webkit-input-placeholder{
-	color: white;
+	color: gray;
 }
 input[type="text"]:-moz-placeholder{
-	color: white;
+	color: gray;
 	opacity: 1;
 }
 input[type="text"]::-moz-placeholder{
-	color: white;
+	color: gray;
 	opacity: 1;
 }
 input[type="text"]:-ms-input-placeholder{
-	color: white;
+	color: gray;
 }
 input[type="text"]::-ms-input-placeholder{
-	color: white;
+	color: gray;
 }
 input[type="text"]::placeholder{
-	color: white;
+	color: gray;
+}
+
+#name.nochar{
+	border: 1px solid rgba(255,0,0);
+	border-radius:5px;
+	outline: none;
+}
+
+#name.up{
+	outline: none;
+	border: none;
+	transform: translate(20px, -135px);
+	border-radius:5px;
 }
 
 
+#name:focus{
+	background: none;
+	outline: none;
+	border: 0px solid rgba(0,255,0, 0.5);
+}
