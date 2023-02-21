@@ -1,3 +1,3 @@
-# fcb-portfolio
+# Ethos
 
 The start of my web development career.
