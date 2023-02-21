@@ -7,7 +7,7 @@ h1, p{
 	color: white;
 }
 
-#profile{
+#mouthimage{
 	height: 250px;
 	width: 250px;
 	border-radius: 50%;
@@ -17,23 +17,94 @@ h1, p{
 	border-color: black;
 }
 
-body {
-	background-color: #000000;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230b0000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23150000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23200000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%232a0000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23350000' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-	background-attachment: fixed;
-	background-size: cover;
-
-}
 
 #landing{
 
 	color: white;
-	height: 90vh;
-	/*background-color: black;*/
+	height: 100vh;
+	background-color: black;
 
 	/* center the content certically and horizontally*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-left: -12px;
 }
+
+/*Transitions*/
+
+#intro {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+#myButton {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+#myButton.fade, #intro.fade, #spannamef.fade{
+	opacity: 0;
+}
+
+#name {
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+#name.up{
+	transform: translate(20px, -135px);
+	border-radius:5px;
+}
+
+#name.blur{
+	
+}
+
+.input-group input {
+	background: transparent;
+	border: none;
+}
+
+.input-group span {
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: white;
+}
+
+input[type="text"]::-webkit-input-placeholder{
+	color: white;
+}
+input[type="text"]:-moz-placeholder{
+	color: white;
+	opacity: 1;
+}
+input[type="text"]::-moz-placeholder{
+	color: white;
+	opacity: 1;
+}
+input[type="text"]:-ms-input-placeholder{
+	color: white;
+}
+input[type="text"]::-ms-input-placeholder{
+	color: white;
+}
+input[type="text"]::placeholder{
+	color: white;
+}
+
+
