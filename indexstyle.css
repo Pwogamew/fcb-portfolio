@@ -21,6 +21,12 @@ h1, p{
 	width: 369px;
 }
 
+#badid{
+	color: red;
+	margin-left: 10px;
+	display: none;
+}
+
 #landing{
 
 	color: white;
@@ -118,6 +124,4 @@ input[type="text"]::placeholder{
 
 #name:focus{
 	background: none;
-	outline: none;
-	border: 0px solid rgba(0,255,0, 0.5);
 }
